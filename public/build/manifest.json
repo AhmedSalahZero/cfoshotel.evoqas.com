@@ -1,29 +1,29 @@
 {
-  "_AppLayout-BMybO7Ym.js": {
-    "file": "assets/AppLayout-BMybO7Ym.js",
+  "_AppLayout-B-rBJSw0.js": {
+    "file": "assets/AppLayout-B-rBJSw0.js",
     "name": "AppLayout",
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_FlashToast-C2YwjyOj.js"
     ]
   },
-  "_AuthLayout-Bt_IKs_-.js": {
-    "file": "assets/AuthLayout-Bt_IKs_-.js",
+  "_AuthLayout-Cjflwbym.js": {
+    "file": "assets/AuthLayout-Cjflwbym.js",
     "name": "AuthLayout",
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_FlashToast-C2YwjyOj.js"
     ]
   },
-  "_ChoiceCards-Cgx4Mg2_.js": {
-    "file": "assets/ChoiceCards-Cgx4Mg2_.js",
+  "_ChoiceCards-Cr5CRK30.js": {
+    "file": "assets/ChoiceCards-Cr5CRK30.js",
     "name": "ChoiceCards",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_CopyInput-CewXCdaq.js": {
-    "file": "assets/CopyInput-CewXCdaq.js",
+  "_CopyInput-B6ezPtcI.js": {
+    "file": "assets/CopyInput-B6ezPtcI.js",
     "name": "CopyInput",
     "imports": [
       "resources/js/app.js",
@@ -37,123 +37,123 @@
     "file": "assets/CopyInput-DdRjPHCj.css",
     "src": "_CopyInput-DdRjPHCj.css"
   },
-  "_FlashToast-X7aC0y-u.js": {
-    "file": "assets/FlashToast-X7aC0y-u.js",
+  "_FlashToast-C2YwjyOj.js": {
+    "file": "assets/FlashToast-C2YwjyOj.js",
     "name": "FlashToast",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_FormField-BiP1hvaF.js": {
-    "file": "assets/FormField-BiP1hvaF.js",
+  "_FormField-D__uiAYr.js": {
+    "file": "assets/FormField-D__uiAYr.js",
     "name": "FormField",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_LoanForm-XnN2oxCg.js": {
-    "file": "assets/LoanForm-XnN2oxCg.js",
+  "_LoanForm-Cx_m_Q6I.js": {
+    "file": "assets/LoanForm-Cx_m_Q6I.js",
     "name": "LoanForm",
     "imports": [
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
       "resources/js/app.js"
     ]
   },
-  "_PaymentTerms-BXWteqTg.js": {
-    "file": "assets/PaymentTerms-BXWteqTg.js",
+  "_PaymentTerms-oPgDr5Y4.js": {
+    "file": "assets/PaymentTerms-oPgDr5Y4.js",
     "name": "PaymentTerms",
     "imports": [
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
       "resources/js/app.js",
-      "_LoanForm-XnN2oxCg.js"
+      "_LoanForm-Cx_m_Q6I.js"
     ]
   },
-  "_PercentTable-vasG_e4u.js": {
-    "file": "assets/PercentTable-vasG_e4u.js",
+  "_PercentTable-CWxPPJdS.js": {
+    "file": "assets/PercentTable-CWxPPJdS.js",
     "name": "PercentTable",
     "imports": [
       "resources/js/app.js",
-      "_CopyInput-CewXCdaq.js",
+      "_CopyInput-B6ezPtcI.js",
       "_adr-C_HU0sfR.js"
     ]
   },
-  "_PurchaseFields-CqfRwUGZ.js": {
-    "file": "assets/PurchaseFields-CqfRwUGZ.js",
+  "_PurchaseFields-BYvwfaI3.js": {
+    "file": "assets/PurchaseFields-BYvwfaI3.js",
     "name": "PurchaseFields",
     "imports": [
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_LoanForm-XnN2oxCg.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_LoanForm-Cx_m_Q6I.js",
       "resources/js/app.js"
     ]
   },
-  "_ResultsTable-BCZivH35.js": {
-    "file": "assets/ResultsTable-BCZivH35.js",
+  "_ResultsTable-iZDhj_lM.js": {
+    "file": "assets/ResultsTable-iZDhj_lM.js",
     "name": "ResultsTable",
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
+      "_FlashToast-C2YwjyOj.js",
       "_reports-BZJ7jCrW.js",
       "_statements-sF56Kg3M.js"
     ]
   },
-  "_SectionNav-RSnRV2_o.js": {
-    "file": "assets/SectionNav-RSnRV2_o.js",
+  "_SectionNav-BIQ_Bqtv.js": {
+    "file": "assets/SectionNav-BIQ_Bqtv.js",
     "name": "SectionNav",
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_FlashToast-C2YwjyOj.js"
     ]
   },
-  "_SelectField-Doa9Q2MN.js": {
-    "file": "assets/SelectField-Doa9Q2MN.js",
+  "_SelectField-CHGu-W88.js": {
+    "file": "assets/SelectField-CHGu-W88.js",
     "name": "SelectField",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_StudyNotices-DZdJXrsL.js": {
-    "file": "assets/StudyNotices-DZdJXrsL.js",
+  "_StudyNotices-BXIxkVW2.js": {
+    "file": "assets/StudyNotices-BXIxkVW2.js",
     "name": "StudyNotices",
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_FlashToast-C2YwjyOj.js"
     ]
   },
-  "_StudyTabs-Bipo33vb.js": {
-    "file": "assets/StudyTabs-Bipo33vb.js",
+  "_StudyTabs-DyKZtnFo.js": {
+    "file": "assets/StudyTabs-DyKZtnFo.js",
     "name": "StudyTabs",
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_FlashToast-C2YwjyOj.js"
     ]
   },
-  "_StudyTimeline-BtpGP-i3.js": {
-    "file": "assets/StudyTimeline-BtpGP-i3.js",
+  "_StudyTimeline-BQMaq_U6.js": {
+    "file": "assets/StudyTimeline-BQMaq_U6.js",
     "name": "StudyTimeline",
     "imports": [
-      "_FlashToast-X7aC0y-u.js",
+      "_FlashToast-C2YwjyOj.js",
       "resources/js/app.js"
     ]
   },
-  "_SwitchField-CuiiQ48Z.js": {
-    "file": "assets/SwitchField-CuiiQ48Z.js",
+  "_SwitchField-fLzy2gpt.js": {
+    "file": "assets/SwitchField-fLzy2gpt.js",
     "name": "SwitchField",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_YearGrid-BM1ejax3.js": {
-    "file": "assets/YearGrid-BM1ejax3.js",
+  "_YearGrid-DACGG61R.js": {
+    "file": "assets/YearGrid-DACGG61R.js",
     "name": "YearGrid",
     "imports": [
       "resources/js/app.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_SelectField-Doa9Q2MN.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_SelectField-CHGu-W88.js",
       "_adr-C_HU0sfR.js",
-      "_CopyInput-CewXCdaq.js"
+      "_CopyInput-B6ezPtcI.js"
     ]
   },
   "__plugin-vue_export-helper-DlAUqK2U.js": {
@@ -240,7 +240,7 @@
     "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-700-normal.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DAb0SKeV.css",
+    "file": "assets/app-HeFvraSE.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -249,17 +249,17 @@
     ]
   },
   "resources/js/Pages/Admin/Companies/Form.vue": {
-    "file": "assets/Form-Be7Tc2wi.js",
+    "file": "assets/Form-BF7B71Bl.js",
     "name": "Form",
     "src": "resources/js/Pages/Admin/Companies/Form.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-BMybO7Ym.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AppLayout-B-rBJSw0.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -281,17 +281,17 @@
     ]
   },
   "resources/js/Pages/Admin/Companies/Index.vue": {
-    "file": "assets/Index-DiB7yXXO.js",
+    "file": "assets/Index-as2wwH-v.js",
     "name": "Index",
     "src": "resources/js/Pages/Admin/Companies/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-BMybO7Ym.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AppLayout-B-rBJSw0.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -313,17 +313,17 @@
     ]
   },
   "resources/js/Pages/Auth/ForgotPassword.vue": {
-    "file": "assets/ForgotPassword-CsC7bNK8.js",
+    "file": "assets/ForgotPassword-Dwu29-qv.js",
     "name": "ForgotPassword",
     "src": "resources/js/Pages/Auth/ForgotPassword.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AuthLayout-Bt_IKs_-.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AuthLayout-Cjflwbym.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -345,17 +345,17 @@
     ]
   },
   "resources/js/Pages/Auth/Login.vue": {
-    "file": "assets/Login-B7fIjjXk.js",
+    "file": "assets/Login-CzlwcMQN.js",
     "name": "Login",
     "src": "resources/js/Pages/Auth/Login.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AuthLayout-Bt_IKs_-.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AuthLayout-Cjflwbym.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -377,17 +377,17 @@
     ]
   },
   "resources/js/Pages/Auth/ResetPassword.vue": {
-    "file": "assets/ResetPassword-DIGcaFIo.js",
+    "file": "assets/ResetPassword-BuUjjpq-.js",
     "name": "ResetPassword",
     "src": "resources/js/Pages/Auth/ResetPassword.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AuthLayout-Bt_IKs_-.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AuthLayout-Cjflwbym.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -409,17 +409,17 @@
     ]
   },
   "resources/js/Pages/Company/Types.vue": {
-    "file": "assets/Types-C5YOcQk0.js",
+    "file": "assets/Types-Ce7wHXXV.js",
     "name": "Types",
     "src": "resources/js/Pages/Company/Types.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_FlashToast-C2YwjyOj.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -441,19 +441,19 @@
     ]
   },
   "resources/js/Pages/Home.vue": {
-    "file": "assets/Home-D7PsOHDq.js",
+    "file": "assets/Home-CYr9ThWt.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_AppLayout-B-rBJSw0.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Home-CD1GEfrF.css",
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -475,26 +475,26 @@
     ]
   },
   "resources/js/Pages/Studies/Casinos.vue": {
-    "file": "assets/Casinos-C9Q48ijS.js",
+    "file": "assets/Casinos-C2nIw28i.js",
     "name": "Casinos",
     "src": "resources/js/Pages/Studies/Casinos.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_YearGrid-BM1ejax3.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_YearGrid-DACGG61R.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js",
-      "_CopyInput-CewXCdaq.js",
+      "_CopyInput-B6ezPtcI.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -516,20 +516,20 @@
     ]
   },
   "resources/js/Pages/Studies/Compare.vue": {
-    "file": "assets/Compare-Cm2ZW73M.js",
+    "file": "assets/Compare-Cmf6QZQU.js",
     "name": "Compare",
     "src": "resources/js/Pages/Studies/Compare.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_AppLayout-B-rBJSw0.js",
       "_reports-BZJ7jCrW.js",
       "_statements-sF56Kg3M.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -551,20 +551,20 @@
     ]
   },
   "resources/js/Pages/Studies/Dashboard.vue": {
-    "file": "assets/Dashboard-DbaAaTI1.js",
+    "file": "assets/Dashboard-Ccr8_Dqr.js",
     "name": "Dashboard",
     "src": "resources/js/Pages/Studies/Dashboard.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
+      "_FlashToast-C2YwjyOj.js",
       "_reports-BZJ7jCrW.js",
-      "_StudyNotices-DZdJXrsL.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_StudyNotices-BXIxkVW2.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -586,22 +586,22 @@
     ]
   },
   "resources/js/Pages/Studies/ExpenseResults.vue": {
-    "file": "assets/ExpenseResults-BzBi6YLR.js",
+    "file": "assets/ExpenseResults-Bh7xWnHL.js",
     "name": "ExpenseResults",
     "src": "resources/js/Pages/Studies/ExpenseResults.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_FlashToast-X7aC0y-u.js",
-      "_ResultsTable-BCZivH35.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ResultsTable-iZDhj_lM.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "resources/js/app.js",
       "_statements-sF56Kg3M.js",
       "_reports-BZJ7jCrW.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -623,25 +623,25 @@
     ]
   },
   "resources/js/Pages/Studies/Expenses.vue": {
-    "file": "assets/Expenses-gJRi3Cmj.js",
+    "file": "assets/Expenses-6BLM4lTn.js",
     "name": "Expenses",
     "src": "resources/js/Pages/Studies/Expenses.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_SelectField-Doa9Q2MN.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_SelectField-CHGu-W88.js",
       "_adr-C_HU0sfR.js",
-      "_CopyInput-CewXCdaq.js",
-      "_PercentTable-vasG_e4u.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_SwitchField-CuiiQ48Z.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_CopyInput-B6ezPtcI.js",
+      "_PercentTable-CWxPPJdS.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_SwitchField-fLzy2gpt.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -663,23 +663,23 @@
     ]
   },
   "resources/js/Pages/Studies/FfeCost.vue": {
-    "file": "assets/FfeCost-BMEX2e91.js",
+    "file": "assets/FfeCost-CPNPWEUi.js",
     "name": "FfeCost",
     "src": "resources/js/Pages/Studies/FfeCost.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_LoanForm-XnN2oxCg.js",
-      "_PaymentTerms-BXWteqTg.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_FlashToast-C2YwjyOj.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_LoanForm-Cx_m_Q6I.js",
+      "_PaymentTerms-oPgDr5Y4.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -701,26 +701,26 @@
     ]
   },
   "resources/js/Pages/Studies/Foods.vue": {
-    "file": "assets/Foods-D-Gp0cm2.js",
+    "file": "assets/Foods-DWpSYpW-.js",
     "name": "Foods",
     "src": "resources/js/Pages/Studies/Foods.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_YearGrid-BM1ejax3.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_YearGrid-DACGG61R.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js",
-      "_CopyInput-CewXCdaq.js",
+      "_CopyInput-B6ezPtcI.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -742,26 +742,26 @@
     ]
   },
   "resources/js/Pages/Studies/Form.vue": {
-    "file": "assets/Form-COIj7DY6.js",
+    "file": "assets/Form-ib5akFR3.js",
     "name": "Form",
     "src": "resources/js/Pages/Studies/Form.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_SwitchField-CuiiQ48Z.js",
-      "_StudyTimeline-BtpGP-i3.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_SwitchField-fLzy2gpt.js",
+      "_StudyTimeline-BQMaq_U6.js",
       "__plugin-vue_export-helper-DlAUqK2U.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_StudyTabs-DyKZtnFo.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
       "assets/Form-B1xWMwst.css",
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -783,18 +783,18 @@
     ]
   },
   "resources/js/Pages/Studies/Index.vue": {
-    "file": "assets/Index-DD9e38MM.js",
+    "file": "assets/Index-BExllBkO.js",
     "name": "Index",
     "src": "resources/js/Pages/Studies/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_StudyTimeline-BtpGP-i3.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_FlashToast-C2YwjyOj.js",
+      "_StudyTimeline-BQMaq_U6.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -816,24 +816,24 @@
     ]
   },
   "resources/js/Pages/Studies/LandAcquisition.vue": {
-    "file": "assets/LandAcquisition-3JT2d2N8.js",
+    "file": "assets/LandAcquisition-Dti1EJPj.js",
     "name": "LandAcquisition",
     "src": "resources/js/Pages/Studies/LandAcquisition.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_LoanForm-XnN2oxCg.js",
-      "_PaymentTerms-BXWteqTg.js",
-      "_PurchaseFields-CqfRwUGZ.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_FlashToast-C2YwjyOj.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_LoanForm-Cx_m_Q6I.js",
+      "_PaymentTerms-oPgDr5Y4.js",
+      "_PurchaseFields-BYvwfaI3.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -855,23 +855,23 @@
     ]
   },
   "resources/js/Pages/Studies/ManagementFees.vue": {
-    "file": "assets/ManagementFees-CfO54YDO.js",
+    "file": "assets/ManagementFees-DBG890kU.js",
     "name": "ManagementFees",
     "src": "resources/js/Pages/Studies/ManagementFees.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_PercentTable-vasG_e4u.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
-      "_CopyInput-CewXCdaq.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_PercentTable-CWxPPJdS.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
+      "_CopyInput-B6ezPtcI.js",
       "__plugin-vue_export-helper-DlAUqK2U.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -893,26 +893,26 @@
     ]
   },
   "resources/js/Pages/Studies/Meetings.vue": {
-    "file": "assets/Meetings-DnmVz8LI.js",
+    "file": "assets/Meetings-CLrDBidH.js",
     "name": "Meetings",
     "src": "resources/js/Pages/Studies/Meetings.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_YearGrid-BM1ejax3.js",
-      "_CopyInput-CewXCdaq.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_YearGrid-DACGG61R.js",
+      "_CopyInput-B6ezPtcI.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -934,26 +934,26 @@
     ]
   },
   "resources/js/Pages/Studies/Others.vue": {
-    "file": "assets/Others-DTMy56z0.js",
+    "file": "assets/Others-B-05Pd97.js",
     "name": "Others",
     "src": "resources/js/Pages/Studies/Others.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_YearGrid-BM1ejax3.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_YearGrid-DACGG61R.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js",
-      "_CopyInput-CewXCdaq.js",
+      "_CopyInput-B6ezPtcI.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -975,23 +975,23 @@
     ]
   },
   "resources/js/Pages/Studies/PropertyAcquisition.vue": {
-    "file": "assets/PropertyAcquisition-CUtoQqMQ.js",
+    "file": "assets/PropertyAcquisition-B8xsHbWN.js",
     "name": "PropertyAcquisition",
     "src": "resources/js/Pages/Studies/PropertyAcquisition.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_LoanForm-XnN2oxCg.js",
-      "_PurchaseFields-CqfRwUGZ.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js"
+      "_FlashToast-C2YwjyOj.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_LoanForm-Cx_m_Q6I.js",
+      "_PurchaseFields-BYvwfaI3.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1013,22 +1013,22 @@
     ]
   },
   "resources/js/Pages/Studies/Ratios.vue": {
-    "file": "assets/Ratios-DSKZFgv8.js",
+    "file": "assets/Ratios-BAupod54.js",
     "name": "Ratios",
     "src": "resources/js/Pages/Studies/Ratios.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_StudyNotices-DZdJXrsL.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_StudyNotices-BXIxkVW2.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_reports-BZJ7jCrW.js",
       "_statements-sF56Kg3M.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1050,22 +1050,22 @@
     ]
   },
   "resources/js/Pages/Studies/Report.vue": {
-    "file": "assets/Report-C--LAqMZ.js",
+    "file": "assets/Report-R1KDQ3Ng.js",
     "name": "Report",
     "src": "resources/js/Pages/Studies/Report.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
+      "_FlashToast-C2YwjyOj.js",
       "_statements-sF56Kg3M.js",
       "_reports-BZJ7jCrW.js",
-      "_StudyNotices-DZdJXrsL.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_StudyNotices-BXIxkVW2.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1087,22 +1087,22 @@
     ]
   },
   "resources/js/Pages/Studies/Revenue.vue": {
-    "file": "assets/Revenue-B9apfomh.js",
+    "file": "assets/Revenue-DndswrEE.js",
     "name": "Revenue",
     "src": "resources/js/Pages/Studies/Revenue.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_FlashToast-X7aC0y-u.js",
-      "_ResultsTable-BCZivH35.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ResultsTable-iZDhj_lM.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "resources/js/app.js",
       "_statements-sF56Kg3M.js",
       "_reports-BZJ7jCrW.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1124,26 +1124,26 @@
     ]
   },
   "resources/js/Pages/Studies/Rooms.vue": {
-    "file": "assets/Rooms-D5yNPiE7.js",
+    "file": "assets/Rooms-CkcnTQJ8.js",
     "name": "Rooms",
     "src": "resources/js/Pages/Studies/Rooms.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_ChoiceCards-Cgx4Mg2_.js",
-      "_FormField-BiP1hvaF.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_YearGrid-BM1ejax3.js",
-      "_CopyInput-CewXCdaq.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_ChoiceCards-Cr5CRK30.js",
+      "_FormField-D__uiAYr.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_YearGrid-DACGG61R.js",
+      "_CopyInput-B6ezPtcI.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1165,22 +1165,22 @@
     ]
   },
   "resources/js/Pages/Studies/StartUpCost.vue": {
-    "file": "assets/StartUpCost-FKu5NPCx.js",
+    "file": "assets/StartUpCost-DrUK_b_s.js",
     "name": "StartUpCost",
     "src": "resources/js/Pages/Studies/StartUpCost.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
-      "_CopyInput-CewXCdaq.js",
-      "_SelectField-Doa9Q2MN.js",
-      "_SectionNav-RSnRV2_o.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_FlashToast-C2YwjyOj.js",
+      "_CopyInput-B6ezPtcI.js",
+      "_SelectField-CHGu-W88.js",
+      "_SectionNav-BIQ_Bqtv.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1202,20 +1202,20 @@
     ]
   },
   "resources/js/Pages/Studies/Statement.vue": {
-    "file": "assets/Statement-DgS5z2Bp.js",
+    "file": "assets/Statement-BT1rrbRE.js",
     "name": "Statement",
     "src": "resources/js/Pages/Studies/Statement.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FlashToast-X7aC0y-u.js",
+      "_FlashToast-C2YwjyOj.js",
       "_statements-sF56Kg3M.js",
-      "_StudyTabs-Bipo33vb.js",
-      "_AppLayout-BMybO7Ym.js",
+      "_StudyTabs-DyKZtnFo.js",
+      "_AppLayout-B-rBJSw0.js",
       "_adr-C_HU0sfR.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1237,17 +1237,17 @@
     ]
   },
   "resources/js/Pages/Users/Form.vue": {
-    "file": "assets/Form-Bq73BsOh.js",
+    "file": "assets/Form-oHNov9XC.js",
     "name": "Form",
     "src": "resources/js/Pages/Users/Form.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-BMybO7Ym.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AppLayout-B-rBJSw0.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1269,17 +1269,17 @@
     ]
   },
   "resources/js/Pages/Users/Index.vue": {
-    "file": "assets/Index-BRz2yeoF.js",
+    "file": "assets/Index-B3xGU7zV.js",
     "name": "Index",
     "src": "resources/js/Pages/Users/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-BMybO7Ym.js",
-      "_FlashToast-X7aC0y-u.js"
+      "_AppLayout-B-rBJSw0.js",
+      "_FlashToast-C2YwjyOj.js"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
@@ -1301,7 +1301,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-C-2Ss8W7.js",
+    "file": "assets/app-D3tNlSD9.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -1337,7 +1337,7 @@
       "resources/js/Pages/Users/Index.vue"
     ],
     "css": [
-      "assets/app-DAb0SKeV.css"
+      "assets/app-HeFvraSE.css"
     ],
     "assets": [
       "assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
