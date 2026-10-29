@@ -1,0 +1,25 @@
+/* ==========================================================================
+   8 - Charts (frames, legends, axis text, hover tips, donut)
+   ========================================================================== */
+@layer components {
+  .chart{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--s4) 18px var(--s3);margin-bottom:var(--s4);box-shadow:var(--shadow)}
+  .chart.bare{border:0;padding:0;margin:0;box-shadow:none;background:transparent}
+  .chart-head{display:flex;justify-content:space-between;align-items:flex-start;gap:6px 24px;flex-wrap:wrap;margin-bottom:var(--s2)}
+  .chart-title{font-size:14px;font-weight:600;color:var(--ink)}
+  .chart-sub{font-size:12.5px;color:var(--mute);margin-top:2px;max-width:70ch}
+  .chart-leg{display:flex;gap:4px 16px;flex-wrap:wrap;font-size:12.5px;color:var(--mute);align-items:center}
+  .chart-leg span{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+  .chart-leg i{display:inline-block;width:18px;height:0;border-top:2.5px solid currentColor;border-radius:2px}
+  .chart-leg i.dash{border-top-style:dashed}
+  .chart-leg i.sq{width:10px;height:10px;border:0;border-radius:2px;background:currentColor}
+  .chart-leg b{color:var(--ink);font-weight:600}
+  .chart svg{display:block;width:100%;height:auto;overflow:visible}
+  .ch-grid{stroke:var(--line);stroke-width:1}
+  .ch-zero{stroke:var(--faint);stroke-width:1}
+  .ch-t{fill:var(--mute);font-size:11.5px;font-variant-numeric:tabular-nums lining-nums;font-feature-settings:var(--num)}
+  .ch-cat{fill:var(--ink);font-size:12px}
+  /* hover tip */
+  /* donut */
+  .legend{display:flex;gap:4px 16px;flex-wrap:wrap;font-size:12.5px;margin:6px 0;color:var(--mute)}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-inline-end:6px}
+}

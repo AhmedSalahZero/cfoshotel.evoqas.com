@@ -1,0 +1,508 @@
+/* ==========================================================================
+   17 - Revenue pages of a study (rooms, and the pages that follow) and the lists of types
+   Built from the tokens, so section colour, light / dark and Arabic follow by themselves.
+   Names:  rv-  = everything on these pages.  The form frame (sf-) and controls (fx-) come from studies.css.
+   ========================================================================== */
+@layer components {
+
+  /* ---------- the pages of one study, as tabs ---------- */
+  .rv-tabs{display:flex;gap:6px;overflow-x:auto;margin:0 0 18px;padding:5px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface-2);scrollbar-width:thin}
+  .rv-tabs a{display:inline-flex;align-items:center;gap:7px;flex:none;padding:8px 14px;border-radius:calc(var(--r-md) - 4px);font-size:13.5px;font-weight:600;color:var(--mute);text-decoration:none;white-space:nowrap}
+  .rv-tabs a:hover{background:var(--hover);color:var(--ink)}
+  .rv-tabs a[aria-current="page"]{background:var(--card);color:var(--sec-ink);box-shadow:var(--shadow-sm,0 1px 3px rgba(16,27,46,.12))}
+  .rv-tabs a:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+  .rv-tick{color:var(--green)}
+
+  /* ---------- tables of figures (a cell for each year or month) ---------- */
+  .rv-scroll{overflow-x:auto;margin:12px 0 4px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card)}
+  .rv-scroll:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .rv-grid{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
+  .rv-grid th,.rv-grid td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start;vertical-align:middle}
+  .rv-grid thead th{background:var(--surface-2);color:var(--mute);font-size:12px;font-weight:700;white-space:nowrap}
+  .rv-grid thead th small{display:block;font-weight:500;color:var(--faint)}
+  .rv-grid tbody tr:last-child th,.rv-grid tbody tr:last-child td{border-bottom:0}
+  .rv-grid td{min-width:124px}
+  .rv-months{min-width:1700px}
+  .rv-months td{min-width:128px}
+  .rv-grid .cin input.inp{min-width:56px;padding-inline:8px}
+  .rv-rowhead{position:sticky;inset-inline-start:0;z-index:1;min-width:150px;background:var(--card);font-weight:600;color:var(--ink);border-inline-end:1px solid var(--line)}
+  thead .rv-rowhead{background:var(--surface-2)}
+  .rv-year{font-variant-numeric:tabular-nums lining-nums}
+  .rv-grid td.bad{background:color-mix(in srgb,var(--red) 7%,var(--card))}
+  .rv-grid .inp{height:36px;width:100%;min-width:64px;font-size:13.5px;font-variant-numeric:tabular-nums lining-nums}
+  .rv-fixed{display:block;padding:0 10px;color:var(--faint);font-weight:600}
+  .rv-sum th,.rv-sum td{background:var(--surface-2);border-top:1.5px solid var(--line-2);border-bottom:0}
+  .rv-sum td.ok b{color:var(--green-ink)}
+  .rv-sum td.bad b{color:var(--red-ink)}
+
+  /* ---------- a room type ---------- */
+  .rv-cards{display:grid;gap:14px;margin-top:16px}
+  .rv-room{padding:16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface-2)}
+  .rv-room header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin-bottom:12px}
+  .rv-room h4{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;color:var(--sec-ink)}
+  .rv-facts{display:flex;flex-wrap:wrap;gap:4px 16px;margin:0;font-size:12.5px;color:var(--mute)}
+  .rv-facts b{color:var(--ink);font-variant-numeric:tabular-nums lining-nums}
+  .rv-result{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;margin:14px 0 0;padding:10px 14px;border-radius:var(--r-sm);background:var(--sec-soft);color:var(--sec-ink);font-size:13.5px}
+  .rv-result b{font-size:15px;font-variant-numeric:tabular-nums lining-nums}
+
+  /* ---------- collection terms ---------- */
+  .rv-terms{display:grid;gap:14px}
+  .rv-terms-body{padding:14px 16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface-2)}
+  .rv-terms-label{display:grid;gap:6px;max-width:320px;font-size:13px;font-weight:600}
+  .rv-instal{display:grid;gap:10px}
+  .rv-instal-row{display:grid;grid-template-columns:minmax(90px,auto) 1fr 1fr;gap:10px 14px;align-items:end}
+  .rv-instal-row label{display:grid;gap:5px;font-size:12.5px;font-weight:600;color:var(--mute)}
+  .rv-pct{position:relative;display:flex;align-items:center}
+  .rv-pct .inp{width:100%;padding-inline-end:30px}
+  .rv-pct i{position:absolute;inset-inline-end:10px;font-style:normal;color:var(--mute)}
+  .rv-total{display:inline-flex;gap:8px;align-items:center;margin:12px 0 0;font-weight:600}
+  .rv-total.ok{color:var(--green-ink)}
+  .rv-total.bad{color:var(--red-ink)}
+  .rv-per-channel{display:grid;gap:16px}
+  .rv-chan h4{margin:0 0 10px;font-size:14px;color:var(--sec-ink)}
+
+  .rv-link{margin-top:10px;padding:0;border:0;background:transparent;color:var(--sec-ink);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+  .rv-link:hover{color:var(--ink)}
+  .rv-yearly{margin-bottom:22px}
+  .rv-yearly:last-child{margin-bottom:0}
+  .rv-yearly h4 small{margin-inline-start:8px;color:var(--mute);font-weight:500}
+  .rv-cap{margin:6px 2px 0;font-size:12.5px}
+
+  .rv-plan{display:grid;gap:14px}
+  .rv-plan-total{white-space:nowrap}
+  .rv-grid th:last-child,.rv-plan-total{position:sticky;inset-inline-end:0;z-index:1;background:var(--card);border-inline-start:1px solid var(--line)}
+  .rv-grid thead th:last-child{background:var(--surface-2)}
+  .rv-grid thead th:last-child:first-child{position:static}
+  .rv-plan-total.ok b{color:var(--green-ink)}
+  .rv-plan-total.bad b{color:var(--red-ink)}
+  .rv-grid td.bad{background:color-mix(in srgb,var(--red) 7%,var(--card))}
+
+  .rv-errors{margin:6px 0 0;padding-inline-start:18px}
+
+  /* ---------- the lists of types ---------- */
+  .rv-typetabs{display:flex;gap:6px;overflow-x:auto;margin:0 0 16px;padding:5px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface-2)}
+  .rv-typetabs button{display:inline-flex;align-items:center;gap:7px;flex:none;padding:8px 14px;border:0;border-radius:calc(var(--r-md) - 4px);background:transparent;font-size:13.5px;font-weight:600;color:var(--mute);white-space:nowrap}
+  .rv-typetabs button:hover{background:var(--hover);color:var(--ink)}
+  .rv-typetabs button[aria-selected="true"]{background:var(--card);color:var(--sec-ink);box-shadow:var(--shadow-sm,0 1px 3px rgba(16,27,46,.12))}
+  .rv-count{padding:1px 7px;border-radius:999px;background:var(--surface-3);font-size:11.5px;font-variant-numeric:tabular-nums}
+  .rv-types{max-width:720px;padding:18px;border:1px solid var(--line);border-radius:var(--r-lg,16px);background:var(--card)}
+  .rv-typelist{display:grid;gap:8px;margin:12px 0;padding:0;list-style:none}
+  .rv-typelist li{display:flex;align-items:center;gap:10px}
+  .rv-typelist .inp{flex:1 1 auto;height:40px}
+  .rv-lock{display:inline-flex;align-items:center;gap:5px;flex:none;padding:6px 10px;border-radius:999px;background:var(--surface-3);color:var(--mute);font-size:12px;font-weight:600}
+  .rv-x{flex:none;padding:0 11px;height:40px}
+  .rv-empty{color:var(--mute)}
+  .rv-typebar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:6px}
+
+  @media (max-width:640px){
+    .rv-instal-row{grid-template-columns:1fr 1fr}
+    .rv-instal-row b{grid-column:1/-1}
+    .rv-rowhead{min-width:120px}
+  }
+
+  /* ---------- reading aids (worked-out rows under the yearly boxes) ---------- */
+  .rv-grid .rv-aid th,.rv-grid .rv-aid td{background:var(--surface-2);color:var(--mute);font-size:12.5px;border-bottom:0}
+  .rv-grid .rv-aid th{font-weight:600}
+  .rv-num{text-align:end;font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}
+
+  /* ---------- revenue results ---------- */
+  .rv-results{margin:0 0 26px}
+  .rv-results>header h3{margin:0 0 4px;font-size:17px}
+  .rv-results>header p{margin:0 0 6px}
+  .rv-s-rooms{background:var(--blue)}
+  .rv-s-foods{background:var(--amber)}
+  .rv-s-casinos{background:var(--cyan)}
+  .rv-s-meetings{background:var(--green)}
+  .rv-s-others{background:var(--sec)}
+  .rv-bars{display:flex;align-items:flex-end;gap:clamp(8px,2.2vw,22px);height:190px;margin:14px 0 6px;padding:16px 16px 0;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card)}
+  .rv-bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;min-width:0}
+  .rv-bar-col{display:flex;flex-direction:column-reverse;width:min(100%,64px);border-radius:6px 6px 0 0;overflow:hidden;min-height:0}
+  .rv-bar-col i{display:block;width:100%}
+  .rv-bar-year{padding:8px 0 10px;font-size:12px;font-weight:600;color:var(--mute)}
+  .rv-dot{display:inline-block;width:10px;height:10px;margin-inline-end:8px;border-radius:3px;vertical-align:baseline}
+  .rv-results-table tfoot th,.rv-results-table tfoot td{background:var(--surface-2);font-weight:800;color:var(--ink);border-bottom:0}
+
+  /* ---------- the groups of pages of a study (Study · Revenue · Expenses · Results) ---------- */
+  .rv-tabset{margin:0 0 18px}
+  .rv-tabset .rv-tabs{margin:0 0 8px}
+  .rv-tabset .rv-tabs:last-child{margin-bottom:0}
+  .rv-groups{padding:0;border:0;background:transparent}
+  .rv-groups a{padding:8px 20px;border:1px solid var(--line);background:var(--card)}
+  .rv-groups a[aria-current="true"]{border-color:var(--sec);background:var(--sec-soft);color:var(--sec-ink)}
+  .rv-groups a.done:not([aria-current="true"]){color:var(--green)}
+
+  /* ---------- expense pages: the tables of lines ---------- */
+  .ex-grid{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
+  .ex-grid th,.ex-grid td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start;vertical-align:middle}
+  .ex-grid thead th{background:var(--surface-2);color:var(--mute);font-size:12px;font-weight:700;white-space:nowrap}
+  .ex-grid thead th small{display:block;font-weight:500;color:var(--faint)}
+  .ex-grid tbody tr:last-child th,.ex-grid tbody tr:last-child td{border-bottom:0}
+  .ex-grid td{min-width:120px}
+  .ex-grid .inp,.ex-grid .sel{height:36px;width:100%;min-width:64px;font-size:13.5px;font-variant-numeric:tabular-nums lining-nums}
+  .ex-grid .fx-num{min-width:96px}
+  .ex-grid .cin input.inp{min-width:56px;padding-inline:8px}
+  .ex-grid td.bad{background:color-mix(in srgb,var(--red) 7%,var(--card))}
+  .ex-name{min-width:200px}
+  .ex-name .inp{min-width:170px;font-weight:500}
+  .ex-revenue th,.ex-revenue td{background:var(--surface-2);color:var(--mute);font-weight:600}
+  .ex-total th,.ex-total td{background:var(--surface-2);font-weight:800;color:var(--ink);border-bottom:0}
+  .ex-total td.bad{background:color-mix(in srgb,var(--red) 12%,var(--surface-2));color:var(--red-ink)}
+  .ex-cost td{min-width:110px}
+  .ex-heads td{min-width:92px}
+  .ex-heads .cin input.inp{min-width:44px}
+  .ex-sub{margin:22px 0 2px;font-size:15px}
+  .ex-col{margin-inline-start:6px;padding:0 6px;border:1px solid var(--line);border-radius:var(--r-sm);background:transparent;color:var(--mute);font-size:13px;line-height:1.4;cursor:pointer}
+  .ex-col:hover{background:var(--hover);color:var(--ink)}
+  .ex-col:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+
+  /* ---------- expense results: the heading row of a department inside a table ---------- */
+  .ex-sub-row th{padding-block:10px 6px;background:var(--surface-2);color:var(--sec-ink);font-size:12px;font-weight:800;letter-spacing:.02em;text-align:start}
+
+  /* ---------- investment pages: purchase, construction, FF&E, loan ---------- */
+  .inv-sub{grid-column:1/-1;margin:8px 0 -2px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;font-weight:700;color:var(--sec-ink)}
+  .inv-sub:first-child{margin-top:0;padding-top:0;border-top:0}
+  .inv-out{font-variant-numeric:tabular-nums lining-nums;direction:ltr;justify-content:flex-start}
+  .inv-out.strong{color:var(--ink);font-weight:800}
+  .inv-out.bad{border-color:var(--red);color:var(--red-ink)}
+  .inv-rates{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+  .inv-rate{display:grid;gap:8px;padding:12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--surface-2)}
+  .inv-rate b{font-size:12.5px;color:var(--mute)}
+  .inv-loan{margin-top:18px;padding:16px;border:1px solid var(--line-2);border-radius:var(--r-md);background:var(--surface-2)}
+  .inv-loan-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 14px}
+  .inv-loan-head h4{margin:0;font-size:15px}
+  .inv-loan-head p{margin:0;font-size:12.5px;color:var(--mute)}
+  .inv-total-line{margin:10px 2px 0;font-size:13px;font-weight:700}
+  .inv-total-line.ok{color:var(--green-ink)}
+  .inv-total-line.bad{color:var(--red-ink)}
+  .inv-items td{min-width:110px}
+  .inv-items td.inv-name{min-width:200px}
+  .inv-items .sel{min-width:96px}
+}
+/* ==========================================================================
+   18 - Statements (receivables, inventory, disposables, prepaid, fees, taxes, assets, loans)
+   Names:  st-  = everything on these pages. The colour of a page is its section colour (--sec), so each family wears its own.
+   ========================================================================== */
+@layer components {
+
+  /* ---------- the band on top of a statement: family, title and the types ---------- */
+  .st-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s4);margin:0 0 var(--s4);padding:var(--s4) var(--s5);border-radius:var(--r-lg);color:#fff;background:linear-gradient(120deg,var(--sec-btn),color-mix(in srgb,var(--sec-btn) 62%,var(--k4)));box-shadow:var(--shadow)}
+  .st-band-title{display:flex;align-items:center;gap:var(--s4);min-inline-size:0}
+  .st-band-icon{display:grid;place-items:center;flex:none;inline-size:42px;block-size:42px;border-radius:14px;background:rgba(255,255,255,.2)}
+  .st-band small{display:block;font-size:12px;font-weight:600;letter-spacing:.04em;opacity:.85}
+  .st-band h3{margin:2px 0 0;font-size:18px;line-height:1.3;color:#fff}
+  .st-types{display:flex;flex-wrap:wrap;gap:6px}
+  .st-type{padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;color:#fff;background:rgba(255,255,255,.16);text-decoration:none;transition:background .15s}
+  .st-type:hover{background:rgba(255,255,255,.3)}
+  .st-type.on{background:#fff;color:var(--sec-ink)}
+  .st-type:focus-visible{outline:2px solid #fff;outline-offset:2px}
+
+  /* ---------- tools above the tables ---------- */
+  .st-bar-tools{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3);margin:0 0 var(--s3)}
+  .st-toggle{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--mute);font-size:12.5px;cursor:pointer}
+  .st-toggle:has(input:checked){border-color:var(--sec);color:var(--sec-ink);background:var(--sec-soft)}
+  .st-toggle input{accent-color:var(--sec);margin:0}
+
+  /* ---------- a table card ---------- */
+  .st-card{margin:0 0 var(--s5);border:1px solid var(--line);border-block-start:4px solid var(--sec);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow);overflow:hidden}
+  .st-head{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3);padding:12px var(--s4);background:linear-gradient(180deg,var(--sec-soft),var(--card))}
+  .st-head h3{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;color:var(--ink)}
+  .st-grow{flex:1}
+  .st-head h3{flex:1;min-inline-size:0}
+  .st-dot{flex:none;inline-size:10px;block-size:10px;border-radius:50%;background:var(--sec);box-shadow:0 0 0 4px var(--sec-soft)}
+  .st-chip{padding:3px 10px;border-radius:999px;background:var(--surface-3);color:var(--mute);font-size:11.5px;font-weight:600}
+  .st-tools{display:flex;gap:6px}
+  .st-tool{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid var(--line-2);border-radius:999px;background:var(--card);color:var(--mute);font-size:12px;font-weight:600;cursor:pointer}
+  .st-tool:hover{border-color:var(--sec);color:var(--sec-ink);background:var(--sec-soft)}
+  .st-tool:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+  /* ---------- the table ---------- */
+  .st-scroll{position:relative;overflow:auto;max-block-size:72vh;border-block-start:1px solid var(--line)}
+  .st-scroll.st-tall{max-block-size:calc(100dvh - var(--topH) - 96px)}   /* the financial statements: the table can use almost the whole screen */
+  .st-scroll:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+  .st-table{inline-size:100%;border-collapse:separate;border-spacing:0;font-size:13px;font-variant-numeric:tabular-nums}
+  .st-table th,.st-table td{padding:9px 12px;border-block-end:1px solid var(--line);white-space:nowrap}
+  .st-dense .st-table th,.st-dense .st-table td{padding:4px 10px}
+  .st-table td{--h:0;text-align:end;min-inline-size:92px;position:relative}
+  .st-table thead th{position:sticky;z-index:3;text-align:center;font-weight:700;color:var(--mute);background:var(--surface-2)}
+  .st-table .st-years th{inset-block-start:0;color:#fff;background:var(--sec-btn);font-size:12.5px;letter-spacing:.03em;border-inline-start:1px solid rgba(255,255,255,.25)}
+  .st-table .st-years th.st-odd{background:color-mix(in srgb,var(--sec-btn) 72%,var(--k4))}
+  .st-table .st-months th{inset-block-start:37px;font-size:12px;background:var(--sec-soft);color:var(--sec-ink)}
+  .st-table .st-months th.st-odd{background:color-mix(in srgb,var(--sec-soft) 70%,var(--surface-3))}
+  .st-dense .st-table .st-months th{inset-block-start:29px}
+  .st-table th.st-name{position:sticky;inset-inline-start:0;z-index:2;text-align:start;min-inline-size:230px;max-inline-size:340px;white-space:normal;background:var(--card);border-inline-end:1px solid var(--line-2)}
+  .st-table thead th.st-name{z-index:4;background:var(--sec-btn);color:#fff;vertical-align:middle}
+  .st-table thead th.st-sumh{background:var(--surface-3);color:var(--ink);vertical-align:middle;min-inline-size:130px}
+  .st-table tbody tr:hover td,.st-table tbody tr:hover th{background-color:var(--hover)}
+  .st-table td.st-odd{background-color:color-mix(in srgb,var(--sec-soft) 38%,transparent)}
+  .st-table td[style]{background-image:linear-gradient(color-mix(in srgb,var(--sec) calc(var(--h) * 26%),transparent),color-mix(in srgb,var(--sec) calc(var(--h) * 26%),transparent))}
+
+  /* the name column: a colour bar, the name and a little trend line */
+  .st-table th.st-name{display:table-cell}
+  .st-bar{display:inline-block;vertical-align:middle;inline-size:4px;block-size:18px;margin-inline-end:10px;border-radius:2px;background:var(--line-2)}
+  .st-label{vertical-align:middle;font-weight:600;color:var(--ink)}
+  .st-spark{float:inline-end;inline-size:64px;block-size:18px;margin-inline-start:10px;fill:none;stroke:var(--sec);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
+
+  /* a colour for each kind of line */
+  .st-opening .st-bar{background:var(--k1)}
+  .st-opening td{color:var(--mute)}
+  .st-addition .st-bar{background:var(--green)}
+  .st-addition td{color:var(--green-ink)}
+  .st-outflow .st-bar{background:var(--amber)}
+  .st-outflow td{color:var(--amber-ink)}
+  .st-subtotal th,.st-subtotal td{background-color:var(--surface-2);font-weight:700;border-block-start:1px solid var(--line-2)}
+  .st-subtotal .st-bar{background:var(--k4)}
+  .st-balance .st-bar{background:var(--k4)}
+  .st-balance td{color:var(--k4)}
+  .st-closing th,.st-closing td{background-color:var(--sec-soft);color:var(--sec-ink);font-weight:800;border-block-start:2px solid var(--sec);border-block-end:2px solid var(--sec)}
+  .st-closing .st-bar{background:var(--sec)}
+  .st-plain .st-bar{background:var(--sec)}
+  .st-table td.st-neg{color:var(--neg);font-weight:700}
+  .st-table td.st-zero{color:var(--line-2);font-weight:400}
+  .st-table .st-subtotal td.st-zero,.st-table .st-closing td.st-zero{color:var(--faint)}
+  .st-idle .st-label{color:var(--faint);font-weight:500}
+  .st-idle .st-bar{background:var(--line)}
+
+  /* the last column */
+  .st-table td.st-sum{position:sticky;inset-inline-end:0;z-index:1;min-inline-size:130px;font-weight:800;color:var(--ink);background-color:var(--surface-3);border-inline-start:1px solid var(--line-2)}
+  .st-sum small{display:inline-block;margin-inline-start:6px;padding:1px 6px;border-radius:6px;background:var(--card);color:var(--mute);font-size:10.5px;font-weight:700;cursor:help}
+  .st-empty td{padding:var(--s5);text-align:center;color:var(--mute)}
+
+  /* the hovered column is lit from top to bottom */
+  .st-cross{position:absolute;inset-block-start:0;z-index:1;pointer-events:none;background:color-mix(in srgb,var(--sec) 9%,transparent);border-inline:1px solid color-mix(in srgb,var(--sec) 35%,transparent)}
+
+  /* ---------- the loan schedule ---------- */
+  .st-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--s3);margin:0 0 var(--s4);padding:0;list-style:none}
+  .st-kpis li{padding:var(--s4);border:1px solid var(--line);border-block-start:4px solid var(--k3);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow)}
+  .st-kpis li:nth-child(2){border-block-start-color:var(--k2)}
+  .st-kpis li:nth-child(3){border-block-start-color:var(--k4)}
+  .st-kpis small{display:block;color:var(--mute);font-size:12px;font-weight:600}
+  .st-kpis strong{display:block;margin-block-start:4px;font-size:22px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .st-table.st-loan thead th{inset-block-start:0;background:var(--sec-btn);color:#fff}
+  .st-loan td.st-end{font-weight:700;color:var(--sec-ink)}
+  .st-loan tbody tr:nth-child(even) th,.st-loan tbody tr:nth-child(even) td{background-color:color-mix(in srgb,var(--sec-soft) 40%,var(--card))}
+  .st-table.st-loan th.st-name{min-inline-size:90px}
+  .st-foot th,.st-foot td{position:sticky;inset-block-end:0;background:var(--sec-soft);color:var(--sec-ink);font-weight:800;border-block-start:2px solid var(--sec)}
+
+  @media (max-width:640px){
+    .st-band{padding:var(--s4)}
+    .st-table th.st-name{min-inline-size:150px}
+    .st-spark{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .st-type{transition:none}
+  }
+}
+
+/* ==========================================================================
+   19 - Financial statements (income statement, cash in / out, balance sheet, ratios)
+   Names:  rp-  = the lines of a report and its ratios. The tables wear the st- look of the statements (section 18); this adds what a report has more:
+   lines that open into lines, a colour for each kind of total, key figures on top.
+   ========================================================================== */
+@layer components {
+
+  /* ---------- key figures ---------- */
+  .rp-kpis li{position:relative}
+  .rp-kpis li:nth-child(4){border-block-start-color:var(--k5)}
+  .rp-kpis li:nth-child(5){border-block-start-color:var(--k6)}
+  .rp-kspark{position:absolute;inset-inline-end:var(--s3);inset-block-start:var(--s3);inline-size:64px;block-size:18px;fill:none;stroke:var(--sec);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.8}
+  .rp-neg{color:var(--neg)}
+  .rp-kpis .rp-check.ok{border-block-start-color:var(--green)}
+  .rp-kpis .rp-check.ok strong{color:var(--green-ink)}
+  .rp-kpis .rp-check.bad{border-block-start-color:var(--red)}
+  .rp-kpis .rp-check.bad strong{color:var(--red-ink)}
+  .rp-check strong{display:flex;align-items:center;gap:8px}
+  .rp-currency{margin-inline-start:auto}
+
+  /* ---------- the arrow that opens a line ---------- */
+  .rp-arrow{display:inline-grid;place-items:center;inline-size:22px;block-size:22px;margin-inline-end:4px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--sec-ink);cursor:pointer;vertical-align:middle}
+  .rp-arrow:hover{background:var(--sec-soft)}
+  .rp-arrow:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+  .rp-none{cursor:default}
+  .rp-none:hover{background:transparent}
+  .rp-chev{transition:transform .15s}
+  .rp-table tr:not(.rp-open) .rp-chev,.rp-chev.rp-shut{transform:rotate(-90deg)}
+  [dir="rtl"] .rp-table tr:not(.rp-open) .rp-chev,[dir="rtl"] .rp-chev.rp-shut{transform:rotate(90deg)}
+  .rp-link{cursor:pointer}
+
+  /* ---------- a line for each level ---------- */
+  .rp-table th.st-name{padding-inline-start:calc(10px + var(--lv,0) * 16px)}
+  .rp-table tr.rp-l1 th,.rp-table tr.rp-l1 td{font-weight:700;background-color:var(--surface-2)}
+  .rp-table tr.rp-l1 td.st-odd{background-color:color-mix(in srgb,var(--sec-soft) 55%,var(--surface-2))}
+  .rp-table tr.rp-l1 .st-bar{background:var(--sec)}
+  .rp-table tr.rp-l2 th{font-weight:600}
+  .rp-table tr.rp-l2 .st-bar{background:var(--line-2)}
+  .rp-table tr.rp-l3 th,.rp-table tr.rp-l3 td{font-size:12px;color:var(--mute)}
+  .rp-table tr.rp-l3 .st-bar{inline-size:3px;block-size:12px;background:var(--line)}
+  .rp-table tr.rp-item .st-label{font-weight:500;color:var(--mute)}
+  .rp-table tr.rp-l3 td.st-neg,.rp-table tr.rp-l2 td.st-neg,.rp-table tr.rp-l1 td.st-neg{color:var(--neg)}
+  .rp-table tr.st-idle .st-label{color:var(--faint);font-weight:500}
+
+  /* the totals */
+  .rp-table tr.rp-l0 th,.rp-table tr.rp-l0 td{font-weight:800;border-block-start:2px solid var(--line-2)}
+  .rp-table tr.rp-block th,.rp-table tr.rp-block td,.rp-table tr.rp-block td.st-odd{background-color:var(--sec-soft);color:var(--sec-ink)}
+  .rp-table tr.rp-block .st-bar{background:var(--sec)}
+  .rp-table tr.rp-result th,.rp-table tr.rp-result td,.rp-table tr.rp-result td.st-odd{background-color:color-mix(in srgb,var(--sec) 18%,var(--card));color:var(--ink);border-block:2px solid var(--sec)}
+  .rp-table tr.rp-result .st-bar{background:var(--sec);inline-size:6px}
+  .rp-table tr.rp-in th,.rp-table tr.rp-in td,.rp-table tr.rp-in td.st-odd{background-color:var(--green-soft);color:var(--green-ink);border-block-start:2px solid var(--green)}
+  .rp-table tr.rp-in .st-bar{background:var(--green)}
+  .rp-table tr.rp-out th,.rp-table tr.rp-out td,.rp-table tr.rp-out td.st-odd{background-color:var(--amber-soft);color:var(--amber-ink);border-block-start:2px solid var(--amber)}
+  .rp-table tr.rp-out .st-bar{background:var(--amber)}
+  .rp-table tr.rp-check th,.rp-table tr.rp-check td{background-color:var(--surface-3);color:var(--mute)}
+  .rp-table tr.rp-l0 td.st-neg{color:var(--neg)}
+  .rp-table tr.rp-l0 td.st-sum{background-color:var(--surface-3);color:var(--ink)}
+  .rp-gap td{block-size:14px;padding:0;border:0;background:var(--surface-2)}
+
+  /* ---------- the ratios ---------- */
+  .rp-ratios .rp-descr{min-inline-size:270px;max-inline-size:360px;white-space:normal;text-align:start;color:var(--mute);font-size:12.5px}
+  .st-table.rp-ratios thead th.rp-descr{background:var(--sec-btn);color:#fff;vertical-align:middle}
+  .rp-ratios td{min-inline-size:100px}
+  .rp-mark{margin-inline-start:4px;color:var(--sec-ink);font-size:11.5px;font-weight:700}
+  .rp-g0{--grp:var(--k1)}
+  .rp-g1{--grp:var(--k3)}
+  .rp-g2{--grp:var(--k2)}
+  .rp-g3{--grp:var(--k4)}
+  .rp-ratios .rp-grouphead th{background-color:color-mix(in srgb,var(--grp) 16%,var(--card));color:var(--ink);border-block-start:2px solid var(--grp)}
+  .rp-ratios .rp-grouphead .st-bar{background:var(--grp);inline-size:6px}
+  .rp-ratios tr.rp-l2 .st-bar{background:var(--grp)}
+  .rp-ratios td[style]{background-image:linear-gradient(color-mix(in srgb,var(--grp) calc(var(--h) * 22%),transparent),color-mix(in srgb,var(--grp) calc(var(--h) * 22%),transparent))}
+
+  @media (max-width:640px){
+    .rp-table th.st-name{padding-inline-start:calc(6px + var(--lv,0) * 12px)}
+    .rp-currency{margin-inline-start:0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .rp-chev{transition:none}
+  }
+}
+
+/* ==========================================================================
+   20 - Study dashboard and its charts
+   Names:  db-  = the page (sections, feasibility cards, chart frames).   sc-  = the SVG chart itself (Components/Charts/SeriesChart.vue).
+   ========================================================================== */
+@layer components {
+
+  .db-section{margin:0 0 var(--s6)}
+  .db-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s3);margin:0 0 var(--s3)}
+  .db-title{display:flex;align-items:center;gap:8px;margin:0 0 var(--s3);font-size:16px;color:var(--ink)}
+  .db-head .db-title{margin:0}
+  .db-title svg{flex:none;color:var(--sec)}
+  .db-hint{margin:calc(var(--s2) * -1) 0 var(--s3);color:var(--mute);font-size:12.5px}
+  .db-pick{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center}
+  .db-select{min-inline-size:240px;max-inline-size:100%;padding:8px 12px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--input);color:var(--input-ink);font:inherit;font-weight:600}
+  .db-select:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+
+  /* feasibility cards */
+  .db-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--s3);margin:0;padding:0;list-style:none}
+  .db-card{--tone:var(--k1);position:relative;display:grid;grid-template-columns:auto 1fr;grid-template-areas:"i t" "i v";column-gap:var(--s3);row-gap:2px;align-items:center;padding:var(--s4);border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow);overflow:hidden}
+  .db-card::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;inline-size:5px;background:var(--tone)}
+  .db-c2{--tone:var(--k2)}
+  .db-c3{--tone:var(--k3)}
+  .db-c4{--tone:var(--k4)}
+  .db-c5{--tone:var(--k5)}
+  .db-c6{--tone:var(--k6)}
+  .db-icon{grid-area:i;display:grid;place-items:center;inline-size:42px;block-size:42px;border-radius:14px;color:var(--tone);background:color-mix(in srgb,var(--tone) 16%,var(--card))}
+  .db-card small{grid-area:t;color:var(--mute);font-size:12.5px;font-weight:600}
+  .db-card strong{grid-area:v;color:var(--ink);font-size:20px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+
+  /* chart frames */
+  .db-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:var(--s4)}
+  .db-grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+  .db-chart{min-inline-size:0;padding:var(--s4);border:1px solid var(--line);border-block-start:4px solid var(--sec);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow)}
+  .db-chart h4{margin:0 0 var(--s2);color:var(--ink);font-size:14px}
+
+  /* the chart */
+  .sc-box{inline-size:100%;min-inline-size:0}
+  .sc{--c:var(--k1);display:block;inline-size:100%;block-size:auto;overflow:visible}
+  .sc-t2{--c:var(--k2)}
+  .sc-t3{--c:var(--k3)}
+  .sc-t4{--c:var(--k4)}
+  .sc-t5{--c:var(--k5)}
+  .sc-t6{--c:var(--k6)}
+  .sc-grid line{stroke:var(--line);stroke-width:1}
+  .sc-grid line.sc-zero{stroke:var(--faint)}
+  .sc-tick{fill:var(--mute);font-size:11px;text-anchor:end;font-variant-numeric:tabular-nums}
+  .sc-bar{fill:var(--c)}
+  .sc-bar.sc-neg{fill:var(--neg)}
+  .sc-hit rect,.sc-hit circle{transition:opacity .15s}
+  .sc-hit:hover rect,.sc-hit:hover circle{opacity:.78}
+  .sc-value{fill:var(--ink);font-size:11px;font-weight:700;text-anchor:middle;font-variant-numeric:tabular-nums}
+  .sc-year{fill:var(--ink);font-size:12px;font-weight:600;text-anchor:middle}
+  .sc-note{fill:var(--green-ink);font-size:10.5px;font-weight:700;text-anchor:middle}
+  .sc-note.sc-down{fill:var(--neg)}
+  .sc-area{fill:color-mix(in srgb,var(--c) 18%,transparent)}
+  .sc-line{fill:none;stroke:var(--c);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}
+  .sc-dot{fill:var(--card);stroke:var(--c);stroke-width:2.4}
+  .sc-s1{fill:var(--k1);background:var(--k1)}
+  .sc-s2{fill:var(--k2);background:var(--k2)}
+  .sc-s3{fill:var(--k3);background:var(--k3)}
+  .sc-s4{fill:var(--k4);background:var(--k4)}
+  .sc-s5{fill:var(--k5);background:var(--k5)}
+  .sc-s6{fill:var(--k6);background:var(--k6)}
+  .sc-legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:var(--s2) 0 0;padding:0;list-style:none;color:var(--mute);font-size:12.5px}
+  .sc-legend li{display:inline-flex;align-items:center;gap:6px}
+  .sc-sw{display:inline-block;inline-size:12px;block-size:12px;border-radius:3px}
+  .sc-empty{margin:0;padding:var(--s5);text-align:center;color:var(--mute)}
+
+  @media (prefers-reduced-motion:reduce){
+    .sc-hit rect,.sc-hit circle{transition:none}
+  }
+}
+
+/* ==========================================================================
+   21 - Compare between two studies
+   Names:  cp-  = the picker and the comparison tables (they wear the st- look of the statements).
+   ========================================================================== */
+@layer components {
+
+  .cp-pick{display:grid;grid-template-columns:1fr auto 1fr auto;gap:var(--s3);align-items:end;margin:0 0 var(--s5);padding:var(--s4);border:1px solid var(--line);border-block-start:4px solid var(--sec);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow)}
+  .cp-pick label{display:grid;gap:4px;min-inline-size:0;color:var(--mute);font-size:12.5px;font-weight:600}
+  .cp-pick select{min-inline-size:0;padding:9px 12px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--input);color:var(--input-ink);font:inherit}
+  .cp-pick select:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+  .cp-swap{display:grid;place-items:center;inline-size:38px;block-size:38px;border:1px solid var(--line-2);border-radius:50%;background:var(--card);color:var(--mute);cursor:pointer}
+  .cp-swap:hover{border-color:var(--sec);background:var(--sec-soft);color:var(--sec-ink)}
+  .cp-swap:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .cp-table td.cp-var{font-weight:700}
+  .cp-table .cp-first .st-bar{background:var(--k1)}
+  .cp-table .cp-second .st-bar{background:var(--k2)}
+  .cp-table tr.cp-variance th,.cp-table tr.cp-variance td{background-color:var(--surface-2);font-weight:700}
+  .cp-table tr.cp-percent th,.cp-table tr.cp-percent td{background-color:var(--sec-soft);color:var(--sec-ink);font-weight:800;border-block-end:2px solid var(--sec)}
+  .cp-table tr.cp-percent td.st-neg{color:var(--neg)}
+  .cp-table tr.cp-variance td.st-neg{color:var(--neg)}
+
+  @media (max-width:760px){
+    .cp-pick{grid-template-columns:1fr}
+    .cp-swap{justify-self:center}
+  }
+  /* ---------- 22 · results tables (revenue results, expense results) ---------- */
+  .rs-table .rs-year{font-variant-numeric:tabular-nums lining-nums}
+  .rs-table thead th small{display:block;margin-block-start:2px;font-size:10.5px;font-weight:500;opacity:.85}
+  .rs-table tr.rs-head th{padding-block:7px;font-size:12.5px;letter-spacing:.03em;text-transform:none}
+  .rs-table tbody tr.rp-l2 th.st-name{padding-inline-start:20px}
+  .rs-table tfoot tr th,.rs-table tfoot tr td{position:sticky;inset-block-end:0;z-index:2}
+  .rs-table tfoot tr th.st-name{z-index:3}
+  .rs-card{margin-block-end:var(--s4)}
+  @media (max-width:760px){
+    .rs-table .st-spark{display:none}
+    .rs-table th.st-name{min-inline-size:128px;max-inline-size:160px}
+    .rs-table td{min-inline-size:84px}
+  }
+  /* ---------- 23 · input tables (revenue, expenses, investment): the same look as the statements ---------- */
+  .rv-scroll{border-block-start:3px solid var(--sec);box-shadow:0 1px 3px color-mix(in srgb,var(--ink) 8%,transparent)}
+  .rv-grid thead th,.ex-grid thead th,.rv-grid thead th:last-child{background:var(--sec-btn);color:#fff;font-size:12.5px;letter-spacing:.02em;border-inline-start:1px solid rgba(255,255,255,.22)}
+  .rv-grid thead th:first-child,.ex-grid thead th:first-child{border-inline-start:0}
+  .rv-grid thead th small,.ex-grid thead th small{color:rgba(255,255,255,.82)}
+  .rv-grid thead th:nth-child(even),.ex-grid thead th:nth-child(even){background:color-mix(in srgb,var(--sec-btn) 80%,var(--k4))}
+  .rv-grid thead .rv-rowhead,.ex-grid thead .rv-rowhead{background:var(--sec-btn);color:#fff}
+  .rv-grid tbody tr:nth-child(even) th,.rv-grid tbody tr:nth-child(even) td,.ex-grid tbody tr:nth-child(even) th,.ex-grid tbody tr:nth-child(even) td{background-color:color-mix(in srgb,var(--sec-soft) 42%,var(--card))}
+  .rv-grid tbody tr:hover th,.rv-grid tbody tr:hover td,.ex-grid tbody tr:hover th,.ex-grid tbody tr:hover td{background-color:var(--hover)}
+  .rv-grid tbody .rv-rowhead,.ex-grid tbody .rv-rowhead{border-inline-start:4px solid var(--sec)}
+  .rv-grid tbody tr td.bad,.ex-grid tbody tr td.bad{background-color:color-mix(in srgb,var(--red) 10%,var(--card))}
+  .rv-grid tbody tr.rv-sum th,.rv-grid tbody tr.rv-sum td,.rv-grid tfoot .rv-sum th,.rv-grid tfoot .rv-sum td,.ex-grid tbody tr.ex-total th,.ex-grid tbody tr.ex-total td,.ex-grid tfoot .ex-total th,.ex-grid tfoot .ex-total td{background-color:var(--sec-soft);color:var(--sec-ink);border-block-start:2px solid var(--sec);font-weight:800}
+  .ex-grid tbody tr.ex-total td.bad{background-color:color-mix(in srgb,var(--red) 14%,var(--sec-soft));color:var(--red-ink)}
+  .rv-grid tbody tr.rv-sum td.bad{background-color:color-mix(in srgb,var(--red) 14%,var(--sec-soft))}
+  .ex-grid tbody tr.ex-revenue th,.ex-grid tbody tr.ex-revenue td{background-color:var(--surface-3);color:var(--ink);font-weight:700}
+  .rv-grid .rv-aid th,.rv-grid .rv-aid td{background-color:var(--surface-3)}
+  .rv-room h4,.rv-chan h4,.ex-sub{padding-inline-start:10px;border-inline-start:4px solid var(--sec)}
+  .ex-grid thead .ex-col,.rv-grid thead .ex-col{border-color:rgba(255,255,255,.55);color:#fff}
+  .ex-grid thead .ex-col:hover,.rv-grid thead .ex-col:hover{background:rgba(255,255,255,.2);color:#fff}
+}

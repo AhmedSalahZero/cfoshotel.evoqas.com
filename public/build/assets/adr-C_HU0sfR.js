@@ -1,0 +1,1 @@
+function m(i,t,n){const r=Number(i);if(!Number.isFinite(r))return 0;const e=Number(t)||0;return r*Math.pow(1+e/100,Number(n)||0)}function o(i,t=2){const n=Number(i);return Number.isFinite(n)?n.toLocaleString("en-US",{minimumFractionDigits:t,maximumFractionDigits:t}):"—"}export{m as a,o as m};
